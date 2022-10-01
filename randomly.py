@@ -4,7 +4,6 @@ Aplicación para resolver ecuaciones lineales v1.0.0
 @since: 2022-10-01
 '''
 import numpy as np
-import random
 
 r = 2
 coef_row = []
@@ -18,7 +17,7 @@ for i in range(1, r + 1):
     result = []
     coef = []
     for j in range(1, variable + 1):
-        x = random.randint(-1, 1)
+        x = np.random.uniform(-1, 1)
         if j < variable:
             coef.append(x)
         else:

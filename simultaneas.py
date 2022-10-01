@@ -5,6 +5,9 @@ Aplicación para resolver ecuaciones lineales v1.0.0
 '''
 import numpy as np
 
+opc = int(
+        input('OPCIONES: \n1-> Captura Manual\n2-> Generación por números aleatorios: ')
+    )
 
 r = int(input('Número de incógnitas: '))
 coef_row = []
@@ -18,7 +21,10 @@ for i in range(1, r + 1):
     result = []
     coef = []
     for j in range(1, variable + 1):
-        x = float(input(f'x{j}: '))
+        if opc == 1:
+            x = float(input(f'x{j}: '))
+        else:
+            x = np.random.uniform(-1, 1)
         if j < variable:
             coef.append(x)
         else:
