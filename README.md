@@ -6,7 +6,7 @@
 
 **Catedrático**: Dr. Roberto Antonio Contreras Masse
 
-**Alumno**: Alfonso Jośe Barroso Barajas
+**Alumno**: Alfonso José Barroso Barajas
 
 Problemas de ecuaciones lineales
 
